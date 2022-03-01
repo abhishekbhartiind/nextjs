@@ -1,10 +1,9 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 
 const Post = ({ props: postUrl }) => {
   return (
     <Layout title={postUrl}>
-      <p>
+      <p style={{ width: "80vw" }}>
         Lorem ipsum dolor sit amet, consectetur adip Lorem, Lorem ipsum dolor
         sit amet, consectetur adip Lorem, Lorem ipsum dolor sit amet,
         consectetur adip Lorem, Lorem ipsum dolor sit amet, consectetur adip

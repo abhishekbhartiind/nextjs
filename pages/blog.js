@@ -1,19 +1,23 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
+const PostLink = ({ title }) => {
+  return (
+    <li>
+      <Link as="react-post" href={`/post?title=${title}`}>
+        <a>{title} Blogs</a>
+      </Link>
+    </li>
+  );
+};
+
 export default () => (
   <Layout title="Blog">
     <ul>
-      <li>
-        <Link href="/post?title=React">
-          <a>Blogs 1</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/post?title=Next">
-          <a>Blogs 2</a>
-        </Link>
-      </li>
+      <PostLink title="React" />
+      <PostLink title="Next" />
+      <PostLink title="CSS" />
+      <PostLink title="NFTS" />
     </ul>
   </Layout>
 );
