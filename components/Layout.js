@@ -10,11 +10,8 @@ Router.onRouteChangeError = () => NProgress.done();
 export default ({ children, title }) => (
   <div className="root">
     <Head>
-      <title>Next Practices</title>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-      />
+      <title>Next learning</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
     <header>
       <Link href="/">
@@ -25,6 +22,9 @@ export default ({ children, title }) => (
       </Link>
       <Link href="/hire">
         <a>Hire</a>
+      </Link>
+      <Link href="/blog">
+        <a>Blogs</a>
       </Link>
     </header>
     <h1>{title}</h1>
@@ -60,12 +60,14 @@ export default ({ children, title }) => (
     <style global jsx>{`
       body {
         margin: 0;
+        font-family: "Roboto", sans-serif;
         font-size: 110%;
         background: #f0f0f0;
       }
       h1,
       p {
         text-align: center;
+        font-family: "Roboto", sans-serif;
       }
       .container {
         display: flex;
