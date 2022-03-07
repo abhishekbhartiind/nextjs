@@ -1,0 +1,21 @@
+.post {
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  box-shadow: 0 2px 20px 0 rgba(234, 76, 137, 0.1);
+  background-image: linear-gradient(180deg, #fdfbf9 0%, #faf4f0 100%);
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.ulstyle {
+  list-style: none;
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

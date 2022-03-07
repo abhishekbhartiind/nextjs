@@ -1,0 +1,24 @@
+.postHeading {
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.postLink {
+  color: #333;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.postImage {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+}
+
+.postBox {
+  cursor: pointer;
+  width: 100%;
+}
